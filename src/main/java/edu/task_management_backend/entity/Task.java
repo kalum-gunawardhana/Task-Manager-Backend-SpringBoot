@@ -21,6 +21,8 @@ public class Task {
     private String title;
     private String description;
     private LocalDate dueDate;
+
+    @Enumerated(EnumType.STRING)
     private TaskStatus status;
 
     @ManyToOne
